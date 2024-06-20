@@ -55,7 +55,8 @@ We want to map the path of the system using visual data as the car moves through
 * The pose data is a set of  `projection matrices` - A matrix that describes how much rotation and traslation the  camera has under gone from with reference to the origin.
  
 * The data also provide caliberation that provides that intrinsic  parameters of camera including the focal length of the camera and the  factors to adjust the optical center of the camera to the center of focal plane. 
-(This is a very vague description please read the trailing  decription to understand  more). 
+(This is a very vague description please read the trailing  decription to understand  more).
+* The data has a set of 4541 images pair from the laft and right cameras repectively.  
 
 
 
@@ -150,7 +151,7 @@ $$
 <br>
 <br>
 
-where k, *the intrinsic matrix* is
+where k, *the intrinsic matrix* is - 
 <br>
 <br>
 
@@ -162,6 +163,8 @@ f_x & 0 &  c_x\\
 0 & 0 & 1
 \end{bmatrix}
 $$
+
+
 
 
 
